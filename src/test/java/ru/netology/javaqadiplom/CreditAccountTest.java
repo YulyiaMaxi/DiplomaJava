@@ -13,7 +13,7 @@ public class CreditAccountTest {
                 15
         );
 
-        account.add(3_000);
+        account.add(3_000); ty
 
         Assertions.assertEquals(3_000, account.getBalance());
     }
