@@ -1,5 +1,5 @@
-package ru.netology;
 
+package ru.netology.javaqadiplom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 public class SavingAccountTest {
@@ -108,3 +108,4 @@ public class SavingAccountTest {
     public void shouldThrowExceptionIfMinBalanceMoreThanMaxBalance() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> new SavingAccount(0, 1000, 700, 15));
     }
+}
