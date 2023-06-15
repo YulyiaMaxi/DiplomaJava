@@ -1,9 +1,7 @@
 package ru.netology.javaqadiplom;
 
 public class Account {
-    public void setBalance(int balance) {
-        this.balance = balance;
-    }
+  
 
     protected int balance;
     protected int rate;
