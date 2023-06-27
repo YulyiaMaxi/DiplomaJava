@@ -44,12 +44,12 @@ public class SavingAccountTest {
         Assertions.assertEquals(1500, account.getBalance());
     }
 
-    @Test
+       @Test
     public void shouldNotPayIfBalanceUnderMinBalance() {
-        SavingAccount account = new SavingAccount(2_000, 1_000, 10_000, 5
+        SavingAccount account = new SavingAccount(1000, 1_000, 10_000, 5
         );
-        account.pay(1500);
-        Assertions.assertEquals(2000, account.getBalance());
+        account.pay(500);
+        Assertions.assertEquals(1000, account.getBalance());
     }
 
     @Test
